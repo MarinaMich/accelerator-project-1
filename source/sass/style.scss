@@ -1,4 +1,10 @@
 // Vendor
-// ---------------------------------
 
 @import "vendor/normalize";
+
+// общие стили
+@import "common/global.scss";
+
+// стили компонентов
+
+@import "blocks/container.scss";
