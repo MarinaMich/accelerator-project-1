@@ -149,3 +149,56 @@
     padding-top: 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding-bottom: 115px;
+  }
+
+  .hero__header {
+    margin-bottom: 27px;
+  }
+
+  .hero__logo {
+    height: 26px;
+  }
+
+  .hero__phone {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .hero__wrapper {
+    margin-left: 147px;
+    column-gap: 56px;
+  }
+
+  .hero__text {
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 1fr 66px;
+    row-gap: 40px;
+    column-gap: 0;
+    padding: 52px 0 56px;
+  }
+
+  .hero__general {
+    align-self: center;
+  }
+
+  .hero__city {
+    margin-bottom: 42px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  .hero__title {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+    text-align: right;
+  }
+
+  .hero__button {
+    padding: 24px 0;
+  }
+}
