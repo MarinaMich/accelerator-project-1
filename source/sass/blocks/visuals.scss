@@ -12,7 +12,7 @@
   overflow: hidden;
   background-image: url("../../img/mobile/video-mob.png");
   background-size: 100% auto;
-  padding-bottom: 56.25%;
+  padding-bottom: 53%;
 }
 
 .visuals__video iframe {
@@ -24,4 +24,104 @@
   border-width: 0;
   outline-width: 0;
   display: none;
+}
+
+.visuals__button {
+  border: none;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  border-radius: 50px;
+  background: $btn-grad;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 6px 9px;
+    border-left-color: $white;
+    border-right: 0;
+    top: 39%;
+    left: 43%;
+
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    top: -20%;
+    left: -20%;
+    border-radius: 50%;
+    border: 2px solid $banner-color;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: $white;
+
+    &::before {
+      border-left-color: $main-text;
+      opacity: 0.6;
+    }
+
+    &::after {
+      border: 2px solid $main-text;;
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    background-image: none;
+    background-color: #c8c9cc;
+
+    &::before {
+      border-left-color: $main-text;
+    }
+
+    &::after {
+      border: 2px solid $main-text;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    width: 41px;
+    height: 41px;
+    background-image: none;
+    background-color: $white;
+    top: 38%;
+    left: 43.5%;
+
+    &::before {
+      border-left-color: $main-text;
+    }
+
+    &::after {
+      border: 2px solid $main-text;
+      opacity: 1;
+      top: -40%;
+      left: -40%;
+    }
+  }
+
+  &:disabled {
+    background-image: none;
+    background-color: $white;
+    opacity: 0.4;
+
+    &::before {
+      border-left-color: $main-text;
+    }
+
+    &::after {
+      border: 2px solid $main-text;
+    }
+  }
 }
