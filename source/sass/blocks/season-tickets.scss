@@ -1,0 +1,22 @@
+.season-tickets {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $add-background;
+}
+
+.season-tickets__title {
+  margin-bottom: 30px;
+}
+
+.season-tickets__tabs {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+    top: 26px;
+  }
+}
