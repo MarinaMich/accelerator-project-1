@@ -1,0 +1,28 @@
+.abonnement {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  padding: 50px 42px;
+}
+
+.abonnement__title {
+  font-family: Roboto Condensed;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.abonnement__time {
+  text-align: center;
+}
+
+.abonnement__price {
+  height: 120px;
+  padding-top: 48px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: $add-accent-text;
+}

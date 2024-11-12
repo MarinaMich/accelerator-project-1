@@ -10,6 +10,7 @@
 
 .season-tickets__tabs {
   position: relative;
+  margin-bottom: 30px;
 
   &::after {
     position: absolute;
@@ -18,5 +19,16 @@
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
     top: 26px;
+  }
+}
+
+.season-tickets__list {
+  display: none;
+
+  &--current {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
   }
 }
