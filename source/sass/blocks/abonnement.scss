@@ -3,6 +3,8 @@
   flex-direction: column;
   row-gap: 18px;
   padding: 50px 42px;
+  background-color: $white;
+  position: relative;
 }
 
 .abonnement__title {
@@ -18,11 +20,71 @@
 }
 
 .abonnement__price {
+  text-align: center;
+  position: relative;
+  width: 206px;
+}
+
+.abonnement__price-background {
+  display: inline-block;
+  left: 20px;
+  top: -2px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: center;
+  color: #e8e8e8;
+  opacity: 0.48;
+  position: absolute;
+  z-index: 1;
+}
+
+.abonnement__price-number {
+  display: inline-block;
   height: 120px;
-  padding-top: 48px;
+  padding-top: 46px;
+  padding-right: 34px;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
   text-align: center;
   color: $add-accent-text;
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../__spritemap#sprite-ruble-view");
+    width: 23px;
+    height: 33px;
+    bottom: 20px;
+    right: 0;
+  }
 }
+
+.abonnement__button {
+  @include link-edit;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px 42px;
+  border: 2px solid $main-text;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: $btn-grad;
+    border: none;
+  }
+}
+
+.abonnement:has(>.abonnement__button:hover) {
+  border: 7px solid transparent;
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+}
+
