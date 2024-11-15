@@ -66,9 +66,10 @@
 @media (min-width: $desktop-width) {
   .about {
     display: flex;
+    justify-content: center;
     column-gap: 145px;
     margin: 0 auto;
-    padding: 120px 103px 240px;
+    padding: 120px 103px 210px;
   }
 
   .about__text {

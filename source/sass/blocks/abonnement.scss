@@ -24,6 +24,8 @@
   flex-direction: column;
   text-align: center;
   position: relative;
+  padding-top: 46px;
+  height: 120px;
   min-width: 206px;
 }
 
@@ -43,9 +45,7 @@
 
 .abonnement__price-number {
   display: inline-block;
-  height: 120px;
   width: 100%;
-  padding-top: 46px;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -86,3 +86,61 @@
   border-image-slice: 1;
 }
 
+@media (min-width: $tablet-width) {
+  .abonnement {
+    padding: 65px;
+    row-gap: 22px;
+  }
+
+  .abonnement__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .abonnement__time {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .abonnement__price {
+    padding-top: 60px;
+    height: 150px;
+  }
+
+  .abonnement__price-number {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .abonnement__ruble {
+    width: 30px;
+    height: 42px;
+  }
+
+  .abonnement__price-background {
+    font-size: 100px;
+    line-height: 150px;
+    top: 0;
+    left: -1px;
+  }
+
+  .abonnement__button {
+    width: 250px;
+    padding: 25px 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .abonnement {
+    row-gap: 17px;
+  }
+
+  .abonnement__title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .abonnement__button {
+    width: 230px;
+  }
+}
