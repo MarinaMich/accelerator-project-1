@@ -14,7 +14,7 @@
     <main>
       <section class="hero container" data-test="hero">
         <div class="hero__header">
-          <a class="hero__logo" title="Главная страница SUPERGYM">
+          <a class="hero__logo" role="link" title="Главная страница SUPERGYM">
             <picture>
               <source type="image/svg+xml" media="(min-width: 1366px)" width="130" height="26" srcset="img/logo.svg">
               <source type="image/svg+xml" media="(min-width: 768px)" width="110" height="22" srcset="img/logo.svg">
@@ -187,9 +187,34 @@
       </section>
       <section class="games container" data-test="games">
         <div class="games__description">
-          <h2 class="games__title title">SUPER GAMES</h2>
+          <div class="games__header">
+            <h2 class="games__title title">SUPER GAMES</h2>
+            <dl class="games__date-time date-time">
+              <dt class="date-time__key">Дата</dt>
+              <dd class="date-time__data">
+                <time datetime="2019-03-07">
+                  <span class="date-time__bold">7</span>
+                  <span>Марта 2019</span>
+                </time>
+              </dd>
+              <dt class="date-time__key">Время</dt>
+              <dd class="date-time__data">
+                <time datetime="12:00">
+                  <span class="date-time__bold">12:00</span>
+                </time>
+              </dd>
+            </dl>
+          </div>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a class="games__button" href="#">заполнить заявку</a>
         </div>
-        <div class="tourney__image"></div>
+        <div class="games__image">
+          <picture>
+            <source type="image/png" media="(min-width: 1366px)" width="660" height="500" srcset="img/desktop/games-desk.jpg 1x, img/desktop/games-desk@2x.jpg 2x">
+            <source type="image/png" media="(min-width: 768px)" width="378" height="348" srcset="img/tablet/games-tab.jpg 1x, img/tablet/games-tab@2x.jpg 2x">
+            <img src="img/mobile/games-mob.jpg" srcset="img/mobile/games-mob@2x.jpg" width="290" height="290" alt="Спортсмен на соревнованих по CrossFit">
+          </picture>
+        </div>
       </section>
       <section class="juri container" data-test="juri">
         <h2 class="title">Жюри</h2>
