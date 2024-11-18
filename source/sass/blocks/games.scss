@@ -102,3 +102,33 @@
     padding: 25px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .games {
+    padding: 100px 0;
+  }
+
+  .games__description {
+    width: 500px;
+    padding: 60px 80px 98px;
+    row-gap: 30px;
+  }
+
+  .games__title {
+    font-size: 82px;
+    line-height: 96px;
+  }
+
+  .games__header {
+    justify-content: space-between;
+    width: 340px;
+  }
+
+  .games__description p {
+    width: 340px;
+  }
+
+  .games__button {
+    width: 340px;
+  }
+}

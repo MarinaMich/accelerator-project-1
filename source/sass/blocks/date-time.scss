@@ -61,3 +61,30 @@
     width: 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .date-time {
+    width: 95px;
+  }
+
+  .date-time__key {
+    padding-bottom: 5px;
+  }
+
+  .date-time__data {
+    padding-top: 6px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .date-time__bold {
+    font-size: 40px;
+    line-height: 40px;
+
+    &--day {
+      padding-top: 2px;
+    }
+  }
+}
