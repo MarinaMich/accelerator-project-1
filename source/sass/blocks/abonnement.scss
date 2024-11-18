@@ -84,6 +84,11 @@
   border: 7px solid transparent;
   border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
   border-image-slice: 1;
+  padding: 43px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px;
+  }
 }
 
 @media (min-width: $tablet-width) {
