@@ -7,6 +7,7 @@
     <title>SUPERGYM</title>
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Light.woff2" type="font/woff2" as="font">
     <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="sass/vendor/swiper-bundle.css">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -218,6 +219,25 @@
       </section>
       <section class="juri container" data-test="juri">
         <h2 class="title">Жюри</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
       <section class="features container" data-test="features">
         <h2 class="title">Наши преимущества</h2>
@@ -257,25 +277,7 @@
         <li></li>
       </ul>
     </footer>
-
-    <!-- пример использования спрайта -->
-    <!--<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-     примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
-    <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
   </body>
 
 </html>

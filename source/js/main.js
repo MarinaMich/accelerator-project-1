@@ -1,7 +1,9 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+// слайдер жюри
+import './swiper.js';
+
+const swiper = document.querySelector('.swiper').swiper;
+swiper.slideNext();
+
 
 // Включение видеоролика
 
