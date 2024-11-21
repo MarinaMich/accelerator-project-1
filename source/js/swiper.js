@@ -2,24 +2,32 @@ import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 
 new Swiper('.swiper', {
-  // Optional parameters
-  //direction: 'vertical',
   modules: [Navigation, Pagination],
+  slidesPerView: 1,
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  mousewheel: {
+    invert: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+    },
+    // when window width is >= 1366px
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
   },
 });

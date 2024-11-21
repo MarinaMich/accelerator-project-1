@@ -218,25 +218,82 @@
         </div>
       </section>
       <section class="juri container" data-test="juri">
-        <h2 class="title">Жюри</h2>
+        <h2 class="juri__title title">Жюри</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+        <div class="slides">
+          <div class="slides__container swiper">
+            <!-- Additional required wrapper -->
+            <div class="slides__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-4.jpg" srcset="img/card-4@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Елена Васильева</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-1.jpg" srcset="img/card-1@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Анна Павлова</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-2.jpg" srcset="img/card-2@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Алексей Лавров</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-3.jpg" srcset="img/card-3@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Александр Пашков</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-4.jpg" srcset="img/card-4@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Мария Кетова</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-2.jpg" srcset="img/card-2@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Иван Дедов</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-3.jpg" srcset="img/card-3@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Павел Сергеев</span>
+                </div>
+                <div class="slides__item swiper-slide">
+                  <div class="slides__img">
+                    <picture>
+                      <img width="260" height="300" src="img/card-1.jpg" srcset="img/card-1@2x.jpg" alt="Портрет члена жюри">
+                    </picture>
+                  </div>
+                  <span class="slides__name">Жанна Иванова</span>
+                </div>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <div class="slides__button-prev swiper-button-prev"></div>
+          <div class="slides__button-next swiper-button-next"></div>
         </div>
       </section>
       <section class="features container" data-test="features">
