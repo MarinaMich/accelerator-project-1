@@ -1,5 +1,10 @@
+.coach-card {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .coach-card__title {
-  margin-bottom: 8px;
+  margin-bottom: 25px;
 }
 
 .coach-card__skills {
@@ -31,8 +36,8 @@
 @media (min-width: $desktop-width) {
   .coach-card:hover,
   .coach-card:focus {
+    display: block;
     top: 0;
-    height: 100%;
     padding-top: 46px;
     background: rgba(16, 38, 84, 0.89);
 
@@ -41,6 +46,10 @@
       max-height: 205px;
       overflow-y: auto;
       overflow-x: hidden;
+    }
+
+    .coach-card__title {
+      margin-bottom: 8px;
     }
   }
 }
