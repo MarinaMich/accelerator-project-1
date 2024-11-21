@@ -99,16 +99,17 @@
   }
 
   .slides__button-prev {
+    left: -50px;
     &::after {
-      left: -58px;
+      left: 0;
       top: 8px;
     }
   }
 
   .slides__button-next {
-
+    right: -51px;
     &::after {
-      right: -59px;
+      right: 0;
       top: 8px;
     }
   }
