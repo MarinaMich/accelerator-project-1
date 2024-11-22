@@ -86,6 +86,7 @@
   text-transform: uppercase;
   text-align: center;
   border: 2px solid $white;
+  background-color: inherit;
 
   &:hover {
     background-color: $white;
@@ -102,11 +103,11 @@
     background-color: $white;
     color: $main-text;
   }
-}
 
-.hero__button[aria-disabled="true"] {
-  opacity: 0.5;
-  pointer-events: none;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .hero__img {
