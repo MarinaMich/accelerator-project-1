@@ -72,19 +72,24 @@
   }
 
   .date-time__data {
-    padding-top: 6px;
+    padding-top: 4px;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
+  }
+
+  .date-time__data time {
+    column-gap: 5px;
   }
 
   .date-time__bold {
     font-size: 40px;
     line-height: 40px;
+    padding-top: 2px;
 
     &--day {
-      padding-top: 2px;
+      padding-top: 5px;
     }
   }
 }
