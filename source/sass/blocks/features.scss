@@ -25,10 +25,10 @@
       margin: 5px 0;
       background-color: $add-background-blocks;
       color: $white;
-      padding-top: 30px;
-      padding-bottom: 40px;
+      padding: 30px 60px 40px;
       margin-left: -15px;
       width: 100vw;
+      row-gap: 0;
 
       b {
         color: $white;
@@ -36,7 +36,11 @@
       }
 
       h3 {
-        margin-bottom: 20px;
+        margin: 0;
+        margin-bottom: 12px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 22px;
       }
     }
   }
