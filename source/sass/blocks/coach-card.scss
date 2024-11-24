@@ -1,6 +1,25 @@
 .coach-card {
   display: flex;
   flex-direction: column-reverse;
+
+  &:hover,
+  &:focus {
+    display: block;
+    top: 0;
+    padding-top: 46px;
+    background: rgba(16, 38, 84, 0.89);
+
+    .coach-card__skills {
+      display: block;
+      max-height: 205px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .coach-card__title {
+      margin-bottom: 8px;
+    }
+  }
 }
 
 .coach-card__title {
@@ -31,25 +50,4 @@
   line-height: 22px;
   text-align: left;
   width: 160px;
-}
-
-@media (min-width: $desktop-width) {
-  .coach-card:hover,
-  .coach-card:focus {
-    display: block;
-    top: 0;
-    padding-top: 46px;
-    background: rgba(16, 38, 84, 0.89);
-
-    .coach-card__skills {
-      display: block;
-      max-height: 205px;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-
-    .coach-card__title {
-      margin-bottom: 8px;
-    }
-  }
 }
