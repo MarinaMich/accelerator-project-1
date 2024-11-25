@@ -4,7 +4,6 @@ import './swiper.js';
 const swiper = document.querySelector('.swiper').swiper;
 swiper.slideNext();
 
-
 // Включение видеоролика
 
 const cover = document.querySelector('.visuals__cover');
@@ -43,3 +42,16 @@ seasonTicketsTabs.forEach((tab, index) => {
     thisTab(currentTab);
   });
 });
+
+// disabled для ссылок
+
+const links = document.querySelectorAll('.link');
+
+const disabledLink = () => {
+  links.forEach((link) => {
+    if (link.classList.contains('link--disabled')) {
+      link.setAttribute('tabindex', '-1');
+    }
+  });
+};
+disabledLink();
