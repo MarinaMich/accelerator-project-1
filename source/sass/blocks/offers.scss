@@ -1,0 +1,135 @@
+.offers {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.offers__title {
+  margin-bottom: 40px;
+}
+
+.offers__main {
+  width: 100vw;
+  margin-left: -15px;
+  background-color: $banner-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.offers__description span {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 9px;
+  display: block;
+}
+
+.offers__description strong {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 28px;
+}
+
+.offers__description p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  width: 260px;
+
+  &:not(:first-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.offers__link {
+  @include link-edit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $white;
+  margin: 0 auto;
+  margin-top: 28px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    padding: 10px;
+    border: 1px solid $white;
+  }
+
+  &--dark {
+    color: $add-background-blocks;
+    border-color: #74819c;
+
+    &:focus {
+      padding: 10px;
+      border: 1px solid $add-background-blocks;
+    }
+  }
+}
+
+.offers__img {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  align-self: center;
+}
+
+.offers__img img{
+  display: block;
+}
+
+.offers__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.offers__item {
+  width: 290px;
+  padding: 20px;
+  border: 7px solid transparent;
+  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-slice: 1;
+  text-align: center;
+}
+
+.offers__item h3 {
+  font-family: Roboto Condensed;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offers__item p {
+  margin: 0;
+
+  &:not(:first-child){
+    margin-bottom: 8px;
+  }
+}
+
+.offers__link--dark {
+  margin-top: 20px;
+}
