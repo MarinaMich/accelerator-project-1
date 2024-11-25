@@ -20,7 +20,7 @@
   }
 }
 
-.date-time__data time {
+.date-time__wrapper {
   display: flex;
   column-gap: 3px;
 }
@@ -79,7 +79,7 @@
     }
   }
 
-  .date-time__data time {
+  .date-time__wrapper {
     column-gap: 5px;
   }
 
