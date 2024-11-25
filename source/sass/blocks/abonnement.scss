@@ -72,9 +72,19 @@
   padding: 25px 42px;
   border: 2px solid $main-text;
 
-  &:hover,
+  &:hover {
+    color: $white;
+    background: $btn-grad;
+    border: none;
+  }
+
   &:focus {
     color: $white;
+    background: $btn-grad;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
     background: $btn-grad;
     border: none;
   }

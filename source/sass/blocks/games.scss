@@ -63,11 +63,6 @@
   }
 }
 
-.games__button[aria-disabled="true"] {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 .games__image img {
   display: block;
 }
