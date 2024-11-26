@@ -41,6 +41,11 @@
 
 .faqs__list {
   @include list-reset;
+  display: none;
+}
+
+.faqs__list--current {
+  display: block;
 
   li {
     padding-top: 20px;
