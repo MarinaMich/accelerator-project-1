@@ -139,6 +139,10 @@
           line-height: 24px;
           margin: 0;
         }
+
+        p {
+          margin-top: 0;
+        }
       }
 
       b {
@@ -184,7 +188,6 @@
 
     li {
       width: 360px;
-      column-gap: 43px;
       justify-content: space-between;
       position: relative;
 
@@ -193,14 +196,21 @@
         grid-column: 2/3;
         padding: 58px 40px;
         width: 360px;
+        min-height: 300px;
+        row-gap: 0;
 
         &:nth-child(2n) {
           grid-row: span 2;
         }
 
+        b {
+          margin-bottom: 10px;
+        }
+
         h3 {
           font-size: 26px;
           line-height: 26px;
+          margin-bottom: 30px;
         }
 
         p {
