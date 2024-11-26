@@ -52,49 +52,72 @@
     padding-bottom: 20px;
     border-top: 1px solid #74819c;
     width: 100%;
-    position: relative;
 
     &:last-child {
       border-bottom: 1px solid #74819c;
     }
 
     h3 {
-      font-family: Roboto Condensed;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 20px;
-      text-align: left;
-      padding-right: 52px;
       margin: 0;
-    }
 
-    button {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid $add-background-blocks;
-      top: 35%;
-      right: 0;
+      button {
+        position: relative;
+        border: none;
+        background-color: inherit;
+        font-family: Roboto Condensed;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-right: 50px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          right: 8px;
+          width: 14px;
+          height: 14px;
+          background-image: url("../../__spritemap#sprite-plus-view");
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          right: 0;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid $add-background-blocks;
+        }
+      }
     }
 
     p {
-      display: none;
+      margin: 0;
+      overflow: hidden;
+      max-height: 0;
+      transition: height 5s;
     }
   }
 
-  &--current {
-    li:first-child {
+  li:first-child {
+    button {
+      &::after {
+        background-image: none;
+        height: 1px;
+        background-color: $white;
+      }
 
-      button {
-        top: 10%;
+      &::before {
         background-color: $add-background-blocks;
       }
+    }
 
-      p {
-        display: block;
-      }
+    p {
+      max-height: auto;
     }
   }
 }
