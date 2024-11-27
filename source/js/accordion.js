@@ -9,10 +9,13 @@ const thisTab = (index) => {
   faqsLists.forEach((list) => list.classList.remove('faqs__list--current'));
   faqsTabs[index].classList.add('faqs__tab--current');
   faqsLists[index].classList.add('faqs__list--current');
+};
 
-  // первый элемент текущего списка
-
-  const itemFirst = faqsLists[index].firstElementChild;
+const itemFirstOpen = () => {
+  const listCurrent = document.querySelector('.faqs__list--current');
+  const itemFirst = listCurrent.firstElementChild;
+  const itemText = itemFirst.querySelector('.faqs__content h3').nextElementSibling;
+  itemText.style.maxHeight = itemText.scrollHeight + 'px';
   itemFirst.classList.add('faqs__item--open');
   itemFirst.firstElementChild.classList.add('faqs__content--open');
 };
@@ -27,9 +30,11 @@ const itemHandler = (evt) => {
   const currentText = currentTitle.nextElementSibling;
 
   if (currentText.offsetHeight === 0) {
+    currentText.style.maxHeight = currentText.scrollHeight + 'px';
     currentContent.classList.add('faqs__content--open');
     item.classList.add('faqs__item--open');
   } else {
+    currentText.style.maxHeight = 0;
     currentContent.classList.remove('faqs__content--open');
     item.classList.remove('faqs__item--open');
   }
@@ -49,10 +54,12 @@ const handler = () => {
 // открытие вкладки текущего таба и возможность выбрать в ней вопрос
 
 const selectionTab = (cb) => {
+  itemFirstOpen();
   faqsTabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
       currentTab = index;
       thisTab(currentTab);
+      itemFirstOpen();
       cb();
     });
     cb();
