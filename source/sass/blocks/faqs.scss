@@ -60,6 +60,20 @@
   &:last-child {
     border-bottom: 1px solid #74819c;
   }
+
+  &--open {
+    .faqs__button {
+      background-color: $add-background-blocks;
+      top: 25px;
+
+      &::after {
+        background-image: none;
+        height: 1px;
+        background-color: $white;
+        top: 14px;
+      }
+    }
+  }
 }
 
 .faqs__button {
@@ -81,21 +95,11 @@
     height: 14px;
     background-image: url("../../__spritemap#sprite-plus-view");
   }
-
-  &--dark-minus {
-    background-color: $add-background-blocks;
-    top: 25px;
-
-    &::after {
-      background-image: none;
-      height: 1px;
-      background-color: $white;
-      top: 14px;
-    }
-  }
 }
 
 .faqs__content {
+  transition: 5s;
+
   h3 {
     margin: 0;
     width: 230px;
@@ -107,7 +111,7 @@
     overflow: hidden;
     //max-height: 0;
     display: none;
-    transition: height 5s;
+    //transition: height 5s;
   }
 
   &--open {

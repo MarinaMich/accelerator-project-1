@@ -9,21 +9,29 @@ const thisTab = (index) => {
   faqsLists.forEach((list) => list.classList.remove('faqs__list--current'));
   faqsTabs[index].classList.add('faqs__tab--current');
   faqsLists[index].classList.add('faqs__list--current');
+
+  // первый элемент текущего списка
+
+  const itemFirst = faqsLists[index].firstElementChild;
+  itemFirst.classList.add('faqs__item--open');
+  itemFirst.firstElementChild.classList.add('faqs__content--open');
 };
 
 // обработка текущего вопроса
 
 const itemHandler = (evt) => {
   evt.preventDefault();
-  const currentItem = evt.target.closest('li h3');
-  const currentButton = evt.target.closest('li h3 button');
-  const currentText = currentItem.nextElementSibling;
+  const item = evt.target.closest('.faqs__item');
+  const currentContent = evt.target.closest('.faqs__content');
+  const currentTitle = evt.target.closest('.faqs__content h3');
+  const currentText = currentTitle.nextElementSibling;
+
   if (currentText.offsetHeight === 0) {
-    currentText.style.maxHeight = currentText.scrollHeight + 'px';
-    currentText.style.marginTop = '20px';
+    currentContent.classList.add('faqs__content--open');
+    item.classList.add('faqs__item--open');
   } else {
-    currentText.style.maxHeight = 0;
-    currentText.style.marginTop = 0;
+    currentContent.classList.remove('faqs__content--open');
+    item.classList.remove('faqs__item--open');
   }
 };
 
@@ -31,7 +39,7 @@ const itemHandler = (evt) => {
 
 const handler = () => {
   const faqsListCurrent = document.querySelector('.faqs__list--current');
-  const faqsItems = faqsListCurrent.querySelectorAll('li');
+  const faqsItems = faqsListCurrent.querySelectorAll('.faqs__item');
 
   faqsItems.forEach((item) => {
     item.addEventListener('click', itemHandler);
