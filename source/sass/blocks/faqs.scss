@@ -46,78 +46,75 @@
 
 .faqs__list--current {
   display: block;
+}
 
-  li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #74819c;
-    width: 100%;
+.faqs__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #74819c;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-    &:last-child {
-      border-bottom: 1px solid #74819c;
-    }
+  &:last-child {
+    border-bottom: 1px solid #74819c;
+  }
+}
 
-    h3 {
-      margin: 0;
+.faqs__button {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $add-background-blocks;
+  padding: 0;
 
-      button {
-        position: relative;
-        border: none;
-        background-color: inherit;
-        font-family: Roboto Condensed;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 20px;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        padding: 0;
-        padding-right: 50px;
-
-        &::after {
-          position: absolute;
-          content: "";
-          right: 8px;
-          width: 14px;
-          height: 14px;
-          background-image: url("../../__spritemap#sprite-plus-view");
-        }
-
-        &::before {
-          position: absolute;
-          content: "";
-          right: 0;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          border: 1px solid $add-background-blocks;
-        }
-      }
-    }
-
-    p {
-      margin: 0;
-      overflow: hidden;
-      max-height: 0;
-      transition: height 5s;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    right: 7px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../__spritemap#sprite-plus-view");
   }
 
-  li:first-child {
-    button {
-      &::after {
-        background-image: none;
-        height: 1px;
-        background-color: $white;
-      }
+  &--dark-minus {
+    background-color: $add-background-blocks;
+    top: 25px;
 
-      &::before {
-        background-color: $add-background-blocks;
-      }
+    &::after {
+      background-image: none;
+      height: 1px;
+      background-color: $white;
+      top: 14px;
     }
+  }
+}
 
+.faqs__content {
+  h3 {
+    margin: 0;
+    width: 230px;
+  }
+
+  p {
+    width: 290px;
+    margin: 0;
+    overflow: hidden;
+    //max-height: 0;
+    display: none;
+    transition: height 5s;
+  }
+
+  &--open {
     p {
-      max-height: auto;
+      //max-height: 100px;
+      display: block;
+      padding-top: 20px;
     }
   }
 }

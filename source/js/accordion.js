@@ -20,10 +20,10 @@ const itemHandler = (evt) => {
   const currentText = currentItem.nextElementSibling;
   if (currentText.offsetHeight === 0) {
     currentText.style.maxHeight = currentText.scrollHeight + 'px';
-    currentText.style.paddingTop = '20px';
+    currentText.style.marginTop = '20px';
   } else {
     currentText.style.maxHeight = 0;
-    currentText.style.paddingTop = 0;
+    currentText.style.marginTop = 0;
   }
 };
 
