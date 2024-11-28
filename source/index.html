@@ -220,7 +220,7 @@
       <section class="juri container" data-test="juri">
         <h2 class="juri__title title">Жюри</h2>
         <!-- Slider main container -->
-        <div class="slides">
+        <div class="juri__slides slides">
           <div class="slides__container swiper">
             <!-- Additional required wrapper -->
             <div class="slides__wrapper swiper-wrapper">
@@ -596,7 +596,47 @@
         </div>
       </section>
       <section class="reviews container" data-test="reviews">
-        <h2 class="title">Отзывы</h2>
+        <h2 class="reviews__title title">Отзывы</h2>
+        <div class="reviews__slider slides-rev">
+          <div class="slides-rev__container swiper">
+            <div class="slides-rev__wrapper swiper-wrapper">
+              <div class="slides-rev__item swiper-slide">
+                <picture>
+                  <img width="68" height="68" src="img/mobile/ellipse-mob.png" srcset="img/mobile/ellipse-mob@2x.png 2x"  alt="Фото автора отзыва">
+                </picture>
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </div>
+              <div class="slides-rev__item swiper-slide">
+                <picture>
+                  <img width="68" height="68" src="img/mobile/ellipse3-mob.jpg" srcset="img/mobile/ellipse3-mob@2x.jpg 2x"  alt="Фото автора отзыва">
+                </picture>
+                <div>
+                  <h3>Юлия Иванова</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </div>
+              <div class="slides-rev__item swiper-slide">
+                <picture>
+                  <img width="68" height="68" src="img/mobile/ellipse2-mob.jpg" srcset="img/mobile/ellipse2-mob@2x.jpg 2x" alt="Фото автора отзыва">
+                </picture>
+                <div>
+                  <h3>Сергей Сидоров</h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+              </div>
+            </div>
+          </div>
+          <button class="slides-rev__button swiper-button-prev"></button>
+          <button class="slides-rev__button swiper-button-next"></button>
+        </div>
       </section>
       <section class="form container" data-test="form">
         <div class="form__free-class">

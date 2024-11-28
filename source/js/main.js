@@ -2,9 +2,6 @@
 import './swiper.js';
 import './accordion.js';
 
-const swiper = document.querySelector('.swiper').swiper;
-swiper.slideNext();
-
 // Включение видеоролика
 
 const cover = document.querySelector('.visuals__cover');
