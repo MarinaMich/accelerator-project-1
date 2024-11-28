@@ -72,17 +72,69 @@
 .faqs__item {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #74819c;
+  border-top: 1px solid $gray-button;
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
 
   &:last-child {
-    border-bottom: 1px solid #74819c;
+    border-bottom: 1px solid $gray-button;
   }
 
   &--open {
+    .faqs__button {
+      background-color: $add-background-blocks;
+      top: 25px;
+
+      &::after {
+        background-image: none;
+        height: 1px;
+        background-color: $white;
+        top: 14px;
+      }
+    }
+  }
+}
+
+.faqs__item {
+  &:hover {
+    .faqs__button {
+      background-color: $add-background-blocks;
+
+      &::after {
+        width: 14px;
+        height: 14px;
+        background-image: url("/__spritemap#sprite-plus-white-view");
+      }
+    }
+  }
+
+  &:focus {
+    .faqs__button {
+      background-color: $gray-button;
+      border: 1px solid $add-background-blocks;
+
+      &::after {
+        width: 14px;
+        height: 14px;
+        background-image: url("/__spritemap#sprite-plus-white-view");
+      }
+    }
+  }
+
+  &--disabled {
+    .faqs__button {
+      opacity: 0.3;
+    }
+  }
+}
+
+// отмена стилий при наведении и фокусе у открытой вкладки
+
+.faqs__item--open {
+  &:hover,
+  &:focus {
     .faqs__button {
       background-color: $add-background-blocks;
       top: 25px;
@@ -200,6 +252,47 @@
     &:nth-child(4) {
       padding-top: 14px;
       padding-bottom: 14px;
+    }
+  }
+
+  .faqs__item {
+    &:hover {
+      .faqs__button {
+        &::after {
+          width: 20px;
+          height: 20px;
+          background-image: url("/__spritemap#sprite-plus-white-view");
+        }
+      }
+    }
+
+    &:focus {
+      .faqs__button {
+        &::after {
+          width: 20px;
+          height: 20px;
+          background-image: url("/__spritemap#sprite-plus-white-view");
+        }
+      }
+    }
+  }
+
+  // отмена стилий при наведении и фокусе у открытой вкладки
+
+  .faqs__item--open {
+    &:hover,
+    &:focus {
+      .faqs__button {
+        background-color: $add-background-blocks;
+        top: 22px;
+
+        &::after {
+          background-image: none;
+          height: 1px;
+          background-color: $white;
+          top: 20px;
+        }
+      }
     }
   }
 
