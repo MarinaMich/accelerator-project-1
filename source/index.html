@@ -600,8 +600,9 @@
         <div class="reviews__slider slides-rev">
           <div class="slides-rev__container swiper">
             <div class="slides-rev__wrapper swiper-wrapper">
-              <div class="slides-rev__item swiper-slide">
+              <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/tablet/ellipse-tab.jpg 1x, img/tablet/ellipse-tab@2x.jpg 2x">
                   <img width="68" height="68" src="img/mobile/ellipse-mob.png" srcset="img/mobile/ellipse-mob@2x.png 2x"  alt="Фото автора отзыва">
                 </picture>
                 <div>
@@ -611,9 +612,10 @@
                   </p>
                 </div>
               </div>
-              <div class="slides-rev__item swiper-slide">
+              <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
-                  <img width="68" height="68" src="img/mobile/ellipse3-mob.jpg" srcset="img/mobile/ellipse3-mob@2x.jpg 2x"  alt="Фото автора отзыва">
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse3@2x.jpg 1x, img/ellipse3@2x.jpg 2x">
+                  <img width="68" height="68" src="img/ellipse3.jpg" srcset="img/ellipse3@2x.jpg 2x"  alt="Фото автора отзыва">
                 </picture>
                 <div>
                   <h3>Юлия Иванова</h3>
@@ -622,20 +624,22 @@
                   </p>
                 </div>
               </div>
-              <div class="slides-rev__item swiper-slide">
+              <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
-                  <img width="68" height="68" src="img/mobile/ellipse2-mob.jpg" srcset="img/mobile/ellipse2-mob@2x.jpg 2x" alt="Фото автора отзыва">
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse2.jpg 1x, img/ellipse2@2x.jpg 2x">
+                  <img width="68" height="68" src="img/ellipse2.jpg" srcset="img/ellipse2@2x.jpg 2x" alt="Фото автора отзыва">
                 </picture>
                 <div>
                   <h3>Сергей Сидоров</h3>
                   <p>
                     «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
                   </p>
+                </div>
               </div>
             </div>
           </div>
-          <button class="slides-rev__button swiper-button-prev"></button>
-          <button class="slides-rev__button swiper-button-next"></button>
+          <button class="slides-rev__button-prev swiper-button-prev"></button>
+          <button class="slides-rev__button-next swiper-button-next"></button>
         </div>
       </section>
       <section class="form container" data-test="form">

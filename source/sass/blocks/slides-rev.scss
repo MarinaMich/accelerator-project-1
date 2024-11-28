@@ -1,17 +1,13 @@
 .slides-rev {
   width: 290px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0 auto;
 }
 
 .slides-rev__container {
   background-color: $add-background-blocks;
   box-shadow: 0px 0px 40px 0px #1c337433;
-}
-
-.slides-rev__wrapper {
-  height: 328px;
 }
 
 .slides-rev__item {
@@ -53,6 +49,114 @@
   }
 }
 
-.slides-rev__button {
+.slides-rev__button-prev,
+.slides-rev__button-next {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slides-rev {
+    position: relative;
+    width: 550px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+  }
+
+  .slides-rev__item {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 40px;
+    padding: 40px 30px;
+
+    div {
+      align-items: start;
+      row-gap: 20px;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    p {
+      width: 320px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .slides-rev__button-prev,
+  .slides-rev__button-next  {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: inherit;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 1px solid $main-text;
+      border-top: 0;
+      border-right: 0;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $main-text;
+      border-radius: 50%;
+    }
+
+    &:focus {
+      width: 50px;
+      height: 50px;
+      border: 1px solid $main-text;
+      border-radius: 50%;
+      background-color: #e8e8e8;
+    }
+
+    &:active {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $main-text;
+
+      &::after {
+        border: 1px solid $white;
+        border-top: 0;
+        border-right: 0;
+      }
+    }
+
+    &:disabled {
+      border: none;
+    }
+  }
+
+  .slides-rev__button-prev {
+    left: -80px;
+
+    &::after {
+      left: 20px;
+      top: 12px;
+    }
+  }
+
+  .slides-rev__button-next {
+    right: -80px;
+
+    &::after {
+      right: 20px;
+      top: 12px;
+      transform: rotate(225deg);
+    }
+  }
 }

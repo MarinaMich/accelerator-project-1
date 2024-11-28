@@ -7,6 +7,17 @@
   margin-bottom: 40px;
 }
 
-.reviews__slider {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__title {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+    margin-bottom: 35px;
+  }
+
 }
