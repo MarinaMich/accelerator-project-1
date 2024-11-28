@@ -33,12 +33,30 @@
   text-align: center;
   border: 1px solid #10265433;
   background-color: inherit;
+  color: $main-text;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $main-text;
+  }
+
+  &:disabled {
+    border: 1px solid #10265433;
+    color: #c8c9cc;
+
+  }
 
   &--current {
     padding: 15px 23px;
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     color: $white;
     border: none;
+
+    &:hover,
+    &:focus {
+      border: none;
+    }
+
   }
 }
 
