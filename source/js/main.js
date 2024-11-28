@@ -2,6 +2,17 @@
 import './swiper.js';
 import './accordion.js';
 
+// слайдер отзывов, блокировка левой кнопки при загрузке страницы
+
+window.addEventListener('load', () => {
+  const listSlide = document.querySelectorAll('.slides-rev__item');
+  const buttonPrev = document.querySelector('.slides-rev__button-prev');
+  if (listSlide[0].classList.contains('swiper-slide-active')) {
+    buttonPrev.classList.add('swiper-button-disabled');
+    buttonPrev.setAttribute('disabled', '');
+  }
+});
+
 // Включение видеоролика
 
 const cover = document.querySelector('.visuals__cover');

@@ -32,7 +32,7 @@ const slides = new Swiper('.slides__container', {
   },
 });
 
-const slidesRev = new Swiper('.swiper', {
+const slidesRev = new Swiper('.slides-rev__container', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   loop: false,
@@ -48,4 +48,4 @@ const slidesRev = new Swiper('.swiper', {
 });
 
 slides.slideNext();
-const swiper = document.querySelector('.slides-rev__containers').slidesRev;
+slidesRev.init();
