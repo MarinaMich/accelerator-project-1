@@ -102,7 +102,7 @@
 
   .features__list {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-auto-flow: row;
     row-gap: 40px;
@@ -116,7 +116,6 @@
       row-gap: 0;
       text-align: left;
       padding: 0;
-      width: 324px;
 
       &:nth-child(5n-2) {
         margin: 0;
@@ -144,7 +143,15 @@
           margin-top: 0;
         }
       }
+/*
+      div:first-child {
+        width: 107px;
+      }
 
+      div:last-child {
+        width: 203px;
+      }
+*/
       b {
         font-size: 70px;
         line-height: 70px;
