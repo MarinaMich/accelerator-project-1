@@ -25,7 +25,7 @@
 
 .faqs__tab {
   width: 140px;
-  padding: 14px 22px;
+  padding: 14px 0;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -47,7 +47,7 @@
   }
 
   &--current {
-    padding: 15px 23px;
+    padding: 15px 0;
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     color: $white;
     border: none;
@@ -226,12 +226,12 @@
 
   .faqs__tab {
     width: 162px;
-    padding: 17px 27px;
+    padding: 17px 0;
     font-size: 18px;
     line-height: 18px;
 
     &--current {
-      padding: 18px 28px;
+      padding: 18px 0;
     }
   }
 
@@ -359,10 +359,10 @@
 
   .faqs__tab {
     width: 260px;
-    padding: 17px 47px;
+    padding: 17px 0;
 
     &--current {
-      padding: 18px 48px;
+      padding: 18px 0;
     }
   }
 
@@ -370,9 +370,13 @@
     width: 860px;
   }
 
-  .faqs__item:nth-child(4) {
-    padding-top: 23px;
-    padding-bottom: 23px;
+  .faqs__item {
+    padding-top: 22px;
+
+    &:nth-child(4) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
   }
 
   .faqs__content {

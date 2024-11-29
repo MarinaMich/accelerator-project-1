@@ -160,3 +160,28 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slides-rev {
+    width: 736px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .slides-rev__item {
+    padding: 60px;
+    column-gap: 30px;
+
+    p {
+      width: 330px;
+    }
+  }
+
+  .slides-rev__button-prev {
+    left: -32px;
+  }
+
+  .slides-rev__button-next {
+    right: -32px;
+  }
+}
