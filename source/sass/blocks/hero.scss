@@ -103,13 +103,6 @@
     background-color: $white;
     color: $main-text;
   }
-
-  &:disabled,
-  &--disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    outline: none;
-  }
 }
 
 .hero__img {

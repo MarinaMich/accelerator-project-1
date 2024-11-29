@@ -642,12 +642,47 @@
           <button class="slides-rev__button-next swiper-button-next"></button>
         </div>
       </section>
-      <section class="form container" data-test="form">
-        <div class="form__free-class">
-          <h2 class="title">Бесплатное занятие</h2>
+      <section class="form-contact container" data-test="form">
+        <div class="form-contact__free-class form">
+          <div class="form__wrapper">
+            <h2 class="form__title title">Бесплатное занятие</h2>
+            <form id="form-contact" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__inputs">
+                <label>
+                  <input placeholder="Имя" type="text" name="name" pattern="/^[a-zа-яё\s]+$/iu" title="Допускается ввод только букв и пробелов" required>
+                </label>
+                <label>
+                  <input placeholder="Телефон" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Используйте только числа" required>
+                </label>
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
-        <div class="form__contact">
-          <h2 class="title">Контакты</h2>
+        <div class="form-contact__contact contact">
+          <h2 class="contact__title title">Контакты</h2>
+          <div class="contact__items">
+            <div>
+              <div class="contact__item">
+                <h3>Адрес</h3>
+                <address>г. Омск, ул. 60 лет Октября, 7</address>
+              </div>
+              <div class="contact__item">
+                <h3>График работы</h3>
+                <p>Пн-Вс: с <time datetime="8:00">8:00</time> до <time datetime="22:00">22:00</time></p>
+              </div>
+            </div>
+            <div>
+              <div class="contact__item">
+                <h3>Телефон</h3>
+                <a class="contact__phone" href="tel:+7(800)555-55-55">8 800 555-55-55</a>
+              </div>
+              <div class="contact__item">
+                <h3>Email:</h3>
+                <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

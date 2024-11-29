@@ -15,7 +15,7 @@ const itemFirstOpen = () => {
   const listCurrent = document.querySelector('.faqs__list--current');
   const itemFirst = listCurrent.firstElementChild;
   const itemText = itemFirst.querySelector('.faqs__content h3').nextElementSibling;
-  itemText.style.maxHeight = itemText.scrollHeight + 'px';
+  itemText.style.maxHeight = `${itemText.scrollHeight}px`;
   itemFirst.classList.add('faqs__item--open');
   itemFirst.firstElementChild.classList.add('faqs__content--open');
 };
@@ -30,7 +30,7 @@ const itemHandler = (evt) => {
   const currentText = currentTitle.nextElementSibling;
 
   if (currentText.offsetHeight === 0) {
-    currentText.style.maxHeight = currentText.scrollHeight + 'px';
+    currentText.style.maxHeight = `${currentText.scrollHeight}px`;
     currentContent.classList.add('faqs__content--open');
     item.classList.add('faqs__item--open');
   } else {

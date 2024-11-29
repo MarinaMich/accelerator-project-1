@@ -1,0 +1,95 @@
+.form__wrapper {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.form__title {
+  margin-bottom: 36px;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+  margin-bottom: 36px;
+
+  input {
+    padding: 0;
+    color:$white;
+    background-color: inherit;
+    border: none;
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid $gray-button;
+    padding: 4px;
+
+    input:not(:focus):invalid {
+      border-bottom: 1px solid $error;
+    }
+/*
+    input:valid:placeholder-shown {
+      border-bottom: 1px solid $gray-button;
+    }*/
+
+    &::placeholder {
+      font-weight: 300;
+      color:$white;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      border-color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $gray-button;
+
+      &::placeholder {
+        color: transparent;;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      border-color: rgba(255, 255, 255, 0.3);
+      pointer-events: none;
+    }
+  }
+}
+
+.form__button {
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  border: 2px solid $white;
+  padding: 22px 0;
+  text-transform: uppercase;
+  width: 290px;
+  background-color: inherit;
+  color: inherit;
+
+  &:hover {
+    color: $white;
+    background: $btn-grad;
+    border: none;
+    padding: 24px 0;
+  }
+
+  &:focus {
+    color: $white;
+    background: $btn-grad;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+}

@@ -64,3 +64,40 @@ const disabledLink = () => {
   });
 };
 disabledLink();
+
+// проверка формы
+/*const NAME_REGEXP = /^[А-Я][а-яё]*$/;
+const PHONE_REGEXP = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
+const formContact = document.querySelector('#form-contact');
+const submit = formContact.querySelector('.form__button');
+const name = formContact.name;
+const phone = formContact.phone;
+
+const isNameValid = (value) => {
+  const rezult = NAME_REGEXP.test(value);
+  return rezult;
+};
+
+const isPhoneValid = (value) => {
+  const rezult = PHONE_REGEXP.test(value);
+  return rezult;
+};
+
+function validate(evt) {
+
+  console.log(name.value, phone.value);
+  if(!isNameValid(name.value)) {
+    name.style.borderBottom = '1px solid #ff121f';
+  } else {
+    name.style.borderBottom = '1px solid #74819c';
+  }
+
+  if(!isPhoneValid(phone.value)) {
+    phone.style.borderBottom = '1px solid #ff121f';
+  } else {
+    phone.style.borderBottom = '1px solid #74819c';
+  }
+  evt.preventDefault();
+}
+submit.addEventListener('click', validate);
+*/
