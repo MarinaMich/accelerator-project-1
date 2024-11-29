@@ -5,9 +5,42 @@
   color: $white;
   margin-left: -15px;
   margin-right: -15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50vw;
+    padding: 60px 103px;
+  }
 }
 
 .form-contact__contact {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50vw;
+    padding: 59px 103px;
+    border-top: 1px solid #74819C;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contact {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
