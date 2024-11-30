@@ -15,6 +15,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: $dark;
+
+  &:hover {
+    background-color: $gray-button;
+    color: $white;
+  }
+
+  &:focus {
+    background-color: $add-accent-text;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $main-text;
+    color: $white;
+  }
+
+  &--disabled,
+  &:disabled {
+    background-color: rgba($white, 0.3);
+    pointer-events: none;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
