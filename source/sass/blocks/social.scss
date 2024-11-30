@@ -1,0 +1,32 @@
+.social {
+  @include list-reset;
+  display: flex;
+  gap: 20px;
+  width: 115px;
+  flex-wrap: wrap
+}
+
+.social__link {
+  @include link-edit;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    gap: 15px;
+    width: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    gap: 10px;
+    width: 95px;
+  }
+}

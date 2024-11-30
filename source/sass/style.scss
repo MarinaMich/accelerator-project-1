@@ -6,6 +6,7 @@
 @import "./common/fonts.scss";
 @import "./common/variables.scss";
 @import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 // стили компонентов
 
@@ -31,3 +32,5 @@
 @import "./blocks/form-contact.scss";
 @import "./blocks/form.scss";
 @import "./blocks/contact.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";

@@ -686,24 +686,60 @@
         </div>
       </section>
     </main>
-    <footer data-test="footer container">
-      <div class="footer__logo">
-        <img src="" alt="Логотип SUPERGYM.">
+    <footer class="footer container" data-test="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1366px)" width="130" height="26" srcset="img/logo.svg">
+            <source type="image/svg+xml" media="(min-width: 768px)" width="110" height="22" srcset="img/logo.svg">
+            <img src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+          </picture>
+        </div>
+        <ul class="footer__links">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <svg width="13" height="8">
+                <use href="/__spritemap#sprite-icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://ok.com/htmlacademy">
+              <svg width="10" height="17">
+                <use xlink:href="/__spritemap#sprite-icon-ok"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Однокласниках</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://reddit.com/htmlacademy">
+              <svg width="15" height="15">
+                <use xlink:href="/__spritemap#sprite-icon-reddit"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Reddit</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="footer__links">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul class="footer__social">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
     </footer>
   <script type="module" src="js/main.js"></script>
   </body>
-
 </html>
