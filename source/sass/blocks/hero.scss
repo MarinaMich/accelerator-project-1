@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
+  min-height: 54px;
 }
 
 .hero__logo {
@@ -23,20 +24,19 @@
 .hero__phone {
   @include link-edit;
   display: block;
-  width: auto;
+  width: 149px;
   height: 22px;
   font-size: 22px;
   font-weight: 700;
   text-align: center;
   margin-top: -1px;
   margin-right: 1px;
-
 }
 
 .hero__text {
   display: grid;
   grid-template-columns: 1fr 156px;
-  grid-template-rows: 170px 1fr;
+  grid-template-rows: auto 1fr;
   row-gap: 48px;
   column-gap: 22px;
 }
@@ -128,6 +128,7 @@
     line-height: 24px;
     height: 24px;
     margin: 0;
+    width: 162px;
   }
 
   .hero__wrapper{
@@ -147,7 +148,6 @@
 
   .hero__text {
     grid-template-columns: 1fr 185px;
-    grid-template-rows: 222px 56px;
     row-gap: 50px;
     column-gap: 26px;
     padding: 31px 0;
@@ -198,6 +198,7 @@
   .hero__phone {
     font-size: 26px;
     line-height: 26px;
+    width: 177px;
   }
 
   .hero__wrapper {

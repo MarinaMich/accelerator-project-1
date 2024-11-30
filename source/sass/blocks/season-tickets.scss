@@ -44,10 +44,14 @@
       content: "";
       width: 325px;
       height: 360px;
-      background-image: url("../../img/tablet/disk.png");
+      background-image: url("../../img/tablet/disk@2x.png");
       background-repeat: no-repeat;
       bottom: 28px;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/tablet/disk@2x@1x.png");
+      }
     }
   }
 
@@ -81,9 +85,13 @@
     &::before {
       width: 325px;
       height: 430px;
-      background-image: url("../../img/desktop/disk-desk.png");
+      background-image: url("../../img/desktop/disk-desk@2x.png");
       bottom: 15px;
       right: -23px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/desktop/disk-desk@2x@1x.png");
+      }
     }
   }
 

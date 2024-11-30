@@ -15,8 +15,8 @@ const slides = new Swiper('.slides__container', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slides__button-next',
+    prevEl: '.slides__button-prev',
   },
   breakpoints: {
     // when window width is >= 768px
@@ -42,8 +42,8 @@ const slidesRev = new Swiper('.slides-rev__container', {
     onlyInViewport: false,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slides-rev__button-next',
+    prevEl: '.slides-rev__button-prev',
   },
 });
 

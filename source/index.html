@@ -39,8 +39,12 @@
           </div>
           <div class="hero__img">
             <picture>
-              <source type="image/png" media="(min-width: 1366px)" width="500" height="524" srcset="img/desktop/hero-desk.jpg 1x, img/desktop/hero-desk@2x.jpg 2x">
-              <img src="img/tablet/hero-tab.jpg" srcset="img/tablet/hero-tab@2x.jpg" width="324" height="390" alt="Изображение спортсмена в футболке супермена.">
+              <!-- WebP -->
+              <source type="image/webp" width="500" height="524" media="(min-width: 1366px)" srcset="img/desktop/hero-desk@2x@1x.webp 1x, img/desktop/hero-desk@2x@2x.webp 2x">
+              <source type="images/webp" width="324" height="390" srcset="img/tablet/hero-tab@2x@1x.webp 1x, img/tablet/hero-tab@2x@2x.webp 2x">
+              <!-- JPG -->
+              <source type="image/png" media="(min-width: 1366px)" width="500" height="524" srcset="img/desktop/hero-desk@2x@1x.jpg 1x, img/desktop/hero-desk@2x@2x.jpg 2x">
+              <img src="img/tablet/hero-tab@2x@1x.jpg" srcset="img/tablet/hero-tab@2x@2x.jpg" width="324" height="390" alt="Изображение спортсмена в футболке супермена.">
             </picture>
           </div>
         </div>
@@ -55,17 +59,27 @@
         <div class="about__visual visuals">
           <div class="visuals__img">
            <picture>
-              <source type="image/png" media="(min-width: 1366px)" width="660" height="400" srcset="img/desktop/main-desk.jpg 1x, img/desktop/main-desk@2x.jpg 2x">
-              <source type="image/png" media="(min-width: 768px)" width="678" height="345" srcset="img/tablet/main-tab.jpg 1x, img/tablet/main-tab@2x.jpg 2x">
-              <img src="img/mobile/main-mob@1x.jpg" srcset="img/mobile/main-mob@2x.jpg" width="320" height="280" alt="Cамый большой фитнес центр за Уралом">
+              <!-- WebP -->
+              <source type="image/webp" width="660" height="400" media="(min-width: 1366px)" srcset="img/desktop/main-desk@2x@1x.webp 1x, img/desktop/main-desk@2x@2x.webp 2x">
+              <source type="image/webp" width="678" height="345" media="(min-width: 768px)" srcset="img/tablet/main-tab@2x@1x.webp 1x, img/tablet/main-tab@2x@2x.webp 2x">
+              <source type="images/webp" width="320" height="280" srcset="img/mobile/main-mob@2x@1x.webp 1x, img/mobile/main-mob@2x@2x.webp 2x">
+              <!-- JPG -->
+              <source type="image/png" media="(min-width: 1366px)" width="660" height="400" srcset="img/desktop/main-desk@2x@1x.jpg 1x, img/desktop/main-desk@2x@2x.jpg 2x">
+              <source type="image/png" media="(min-width: 768px)" width="678" height="345" srcset="img/tablet/main-tab@2x@1x.jpg 1x, img/tablet/main-tab@2x@2x.jpg 2x">
+              <img src="img/mobile/main-mob@2x@1x.jpg" srcset="img/mobile/main-mob@2x@2x.jpg" width="320" height="280" alt="Cамый большой фитнес центр за Уралом">
             </picture>
           </div>
           <div class="visuals__video">
             <div class="visuals__cover">
               <picture>
-                <source type="image/png" media="(min-width: 1366px)" width="360" height="230" srcset="img/desktop/video-desk.jpg 1x, img/desktop/video-desk@2x.jpg 2x">
-                <source type="image/png" media="(min-width: 768px)" width="270" height="170" srcset="img/tablet/video-tab.jpg 1x, img/tablet/video-tab@2x.jpg 2x">
-                <img width="320" height="170" src="img/mobile/video-mob.jpg" srcset="img/mobile/video-mob@2x.jpg 2x" alt="Заставка видеоплеера">
+                <!-- WebP -->
+                <source type="image/webp" width="360" height="230" media="(min-width: 1366px)" srcset="img/desktop/video-desk@2x@1x.webp 1x, img/desktop/video-desk@2x@2x.webp 2x">
+                <source type="image/webp" width="270" height="170" media="(min-width: 768px)" srcset="img/tablet/video-tab@2x@1x.webp 1x, img/tablet/video-tab@2x@2x.webp 2x">
+                <source type="images/webp" width="320" height="170" srcset="img/mobile/video-mob@2x@1x.webp 1x, img/mobile/video-mob@2x@2x.webp 2x">
+                <!-- JPG -->
+                <source type="image/png" media="(min-width: 1366px)" width="360" height="230" srcset="img/desktop/video-desk@2x@1x.jpg 1x, img/desktop/video-desk@2x@2x.jpg 2x">
+                <source type="image/png" media="(min-width: 768px)" width="270" height="170" srcset="img/tablet/video-tab@2x@1x.jpg 1x, img/tablet/video-tab@2x@2x.jpg 2x">
+                <img width="320" height="170" src="img/mobile/video-mob@2x@1x.jpg" srcset="img/mobile/video-mob@2x@2x.jpg 2x" alt="Заставка видеоплеера">
               </picture>
             </div>
             <div class="visuals__iframe"></div>
@@ -211,9 +225,14 @@
         </div>
         <div class="games__image">
           <picture>
-            <source type="image/png" media="(min-width: 1366px)" width="660" height="500" srcset="img/desktop/games-desk.jpg 1x, img/desktop/games-desk@2x.jpg 2x">
-            <source type="image/png" media="(min-width: 768px)" width="378" height="348" srcset="img/tablet/games-tab.jpg 1x, img/tablet/games-tab@2x.jpg 2x">
-            <img src="img/mobile/games-mob.jpg" srcset="img/mobile/games-mob@2x.jpg" width="290" height="290" alt="Спортсмен на соревнованих по CrossFit">
+            <!-- WebP -->
+            <source type="image/webp" width="660" height="500" media="(min-width: 1366px)" srcset="img/desktop/games-desk@2x@1x.webp 1x, img/desktop/games-desk@2x@2x.webp 2x">
+            <source type="image/webp" width="378" height="348" media="(min-width: 768px)" srcset="img/tablet/games-tab@2x@1x.webp 1x, img/tablet/games-tab@2x@2x.webp 2x">
+            <source type="images/webp" width="290" height="290" srcset="img/mobile/games-mob@2x@1x.webp 1x, img/mobile/games-mob@2x@2x.webp 2x">
+            <!-- JPG -->
+            <source type="image/png" media="(min-width: 1366px)" width="660" height="500" srcset="img/desktop/games-desk@2x@1x.jpg 1x, img/desktop/games-desk@2x@2.jpg 2x">
+            <source type="image/png" media="(min-width: 768px)" width="378" height="348" srcset="img/tablet/games-tab@2x@1x.jpg 1x, img/tablet/games-tab@2x@2.jpg 2x">
+            <img src="img/mobile/games-mob@2x@1x.jpg" srcset="img/mobile/games-mob@2x@2x.jpg" width="290" height="290" alt="Спортсмен на соревнованих по CrossFit">
           </picture>
         </div>
       </section>
@@ -228,7 +247,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-4.jpg" srcset="img/card-4@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-4@2x@1.webp 1x, img/card-4@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-4@2x@1x.jpg" srcset="img/card-4@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -246,7 +268,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-1.jpg" srcset="img/card-1@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-1@2x@1.webp 1x, img/card-1@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-1@2x@1x.jpg" srcset="img/card-1@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -264,7 +289,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-2.jpg" srcset="img/card-2@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-2@2x@1.webp 1x, img/card-2@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-2@2x@1.jpg" srcset="img/card-2@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -282,7 +310,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-3.jpg" srcset="img/card-3@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-3@2x@1.webp 1x, img/card-3@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-3@2x@1.jpg" srcset="img/card-3@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -300,7 +331,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-4.jpg" srcset="img/card-4@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-4@2x@1.webp 1x, img/card-4@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-4@2x@1.jpg" srcset="img/card-4@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -318,7 +352,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-2.jpg" srcset="img/card-2@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-2@2x@1.webp 1x, img/card-2@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-2@2x@1.jpg" srcset="img/card-2@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -336,7 +373,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-3.jpg" srcset="img/card-3@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-3@2x@1.webp 1x, img/card-3@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-3@2x@1.jpg" srcset="img/card-3@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -354,7 +394,10 @@
                 <div class="slides__item swiper-slide" tabindex="0">
                   <div class="slides__img">
                     <picture>
-                      <img width="260" height="300" src="img/card-1.jpg" srcset="img/card-1@2x.jpg" alt="Портрет члена жюри">
+                      <!-- WebP -->
+                      <source type="images/webp" width="260" height="300" srcset="img/card-1@2x@1.webp 1x, img/card-1@2x@2x.webp 2x">
+                      <!-- JPG -->
+                      <img width="260" height="300" src="img/card-1@2x@1x.jpg" srcset="img/card-1@2x@2x.jpg" alt="Портрет члена жюри">
                     </picture>
                   </div>
                   <div class="slides__name coach-card">
@@ -440,9 +483,14 @@
             </div>
             <div class="offers__img">
               <picture>
-                <source type="image/png" media="(min-width: 1366px)" width="280" height="460" srcset="img/desktop/girl-desk.jpg 1x, img/desktop/girl-desk@2x.jpg 2x">
-                <source type="image/png" media="(min-width: 768px)" width="400" height="462" srcset="img/tablet/girl-tab.jpg 1x, img/tablet/girl-tab@2x.jpg 2x">
-                <img width="320" height="360" src="img/mobile/girl-mob.jpg" srcset="img/mobile/girl-mob@2x.jpg" alt="Изображение девушки-спортсменки">
+                <!-- WebP -->
+                <source type="image/webp" width="280" height="460" media="(min-width: 1366px)" srcset="img/desktop/girl-desk@2x@1x.webp 1x, img/desktop/girl-desk@2x@2x.webp 2x">
+                <source type="image/webp" width="400" height="462" media="(min-width: 768px)" srcset="img/tablet/girl-tab@2x@1x.webp 1x, img/tablet/girl-tab@2x@2x.webp 2x">
+                <source type="images/webp" width="320" height="360" srcset="img/mobile/girl-mob@2x@1x.webp 1x, img/mobile/girl-mob@2x@2x.webp 2x">
+                <!-- JPG -->
+                <source type="image/png" media="(min-width: 1366px)" width="280" height="460" srcset="img/desktop/girl-desk@2x@1x.jpg 1x, img/desktop/girl-desk@2x@2x.jpg 2x">
+                <source type="image/png" media="(min-width: 768px)" width="400" height="462" srcset="img/tablet/girl-tab@2x@1x.jpg 1x, img/tablet/girl-tab@2x@2x.jpg 2x">
+                <img width="320" height="360" src="img/mobile/girl-mob@2x@1x.jpg" srcset="img/mobile/girl-mob@2x@2x.jpg" alt="Изображение девушки-спортсменки">
               </picture>
             </div>
           </div>
@@ -602,8 +650,12 @@
             <div class="slides-rev__wrapper swiper-wrapper">
               <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
-                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/tablet/ellipse-tab.jpg 1x, img/tablet/ellipse-tab@2x.jpg 2x">
-                  <img width="68" height="68" src="img/mobile/ellipse-mob.png" srcset="img/mobile/ellipse-mob@2x.png 2x"  alt="Фото автора отзыва">
+                   <!-- WebP -->
+                   <source type="image/webp" width="80" height="80" media="(min-width: 768px)" srcset="img/tablet/ellipse-tab@2x@1x.webp 1x, img/tablet/ellipse-tab@2x@2x.webp 2x">
+                   <source type="images/webp" width="68" height="68" srcset="img/mobile/ellipse-mob@2x@1.webp 1x, img/mobile/ellipse-mob@2x@2x.webp 2x">
+                   <!-- JPG -->
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/tablet/ellipse-tab@2x@1x.jpg 1x, img/tablet/ellipse-tab@2x@2x.jpg 2x">
+                  <img width="68" height="68" src="img/mobile/ellipse-mob@2x@1x.png" srcset="img/mobile/ellipse-mob@2x@2x.png 2x"  alt="Фото автора отзыва">
                 </picture>
                 <div>
                   <h3>Анна Орлова</h3>
@@ -614,8 +666,12 @@
               </div>
               <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
-                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse3@2x.jpg 1x, img/ellipse3@2x.jpg 2x">
-                  <img width="68" height="68" src="img/ellipse3.jpg" srcset="img/ellipse3@2x.jpg 2x"  alt="Фото автора отзыва">
+                  <!-- WebP -->
+                  <source type="image/webp" width="80" height="80" media="(min-width: 768px)" srcset="img/ellipse3@2x@1x.webp 1x, img/ellipse3@2x@2x.webp 2x">
+                  <source type="images/webp" width="68" height="68" srcset="img/ellipse3@2x@1x.webp 1x, img/ellipse3@2x@2x.webp 2x">
+                  <!-- JPG -->
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse3@2x@1x.jpg 1x, img/ellipse3@2x@2x.jpg 2x">
+                  <img width="68" height="68" src="img/ellipse3@2x@1x.jpg" srcset="img/ellipse3@2x@2x.jpg 2x"  alt="Фото автора отзыва">
                 </picture>
                 <div>
                   <h3>Юлия Иванова</h3>
@@ -626,8 +682,12 @@
               </div>
               <div class="slides-rev__item swiper-slide" tabindex="0">
                 <picture>
-                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse2.jpg 1x, img/ellipse2@2x.jpg 2x">
-                  <img width="68" height="68" src="img/ellipse2.jpg" srcset="img/ellipse2@2x.jpg 2x" alt="Фото автора отзыва">
+                  <!-- WebP -->
+                  <source type="image/webp" width="80" height="80" media="(min-width: 768px)" srcset="img/ellipse2@2x@1x.webp 1x, img/ellipse2@2x@2x.webp 2x">
+                  <source type="images/webp" width="68" height="68" srcset="img/ellipse2@2x@1x.webp 1x, img/ellipse2@2x@2x.webp 2x">
+                  <!-- JPG -->
+                  <source type="image/png" media="(min-width: 768px)" width="80" height="80" srcset="img/ellipse2@2x@1x.jpg 1x, img/ellipse2@2x@2x.jpg 2x">
+                  <img width="68" height="68" src="img/ellipse2@2x@1x.jpg" srcset="img/ellipse2@2x@2x.jpg 2x" alt="Фото автора отзыва">
                 </picture>
                 <div>
                   <h3>Сергей Сидоров</h3>
