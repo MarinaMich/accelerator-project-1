@@ -649,7 +649,7 @@
             <form id="form-contact" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inputs">
                 <label>
-                  <input placeholder="Имя" type="text" name="name" pattern="/^[a-zа-яё\s]+$/iu" title="Допускается ввод только букв и пробелов" required>
+                  <input placeholder="Имя" type="text" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" title="Допускается ввод только букв и пробелов" required>
                 </label>
                 <label>
                   <input placeholder="Телефон" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Используйте только числа" required>
@@ -664,7 +664,7 @@
           <div class="contact__items">
             <div class="contact__column">
               <div class="contact__item">
-                <h3 class="contact__item-name">Адрес</h3>
+                <h3 class="contact__item-name">Адрес:</h3>
                 <address class="contact__address">г. Омск, ул. 60 лет Октября, 7</address>
               </div>
               <div class="contact__item">

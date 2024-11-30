@@ -28,13 +28,13 @@
     border-bottom: 1px solid $gray-button;
     padding: 2px 0;
 
-    input:not(:focus):invalid {
+    input:invalid {
       border-bottom: 1px solid $error;
     }
-/*
-    input:valid:placeholder-shown {
+
+    input:valid {
       border-bottom: 1px solid $gray-button;
-    }*/
+    }
 
     &::placeholder {
       font-weight: 300;
@@ -49,9 +49,10 @@
     &:focus {
       outline: none;
       border: 1px solid $gray-button;
+      padding: 1px 0;
 
       &::placeholder {
-        color: transparent;;
+        color: transparent;
       }
     }
 
@@ -80,12 +81,19 @@
     color: $white;
     background: $btn-grad;
     border: none;
-    padding: 24px 0;
+    padding: 26px 0;
   }
 
   &:focus {
     color: $white;
     background: $btn-grad;
+  }
+
+  &:active {
+    color: $main-text;
+    background: $white;
+    border: none;
+    padding: 26px 0;
   }
 
   &:disabled {
@@ -112,18 +120,24 @@
 
     input {
       width: 205px;
+      padding: 2px 0 1px;
     }
   }
 
   .form__button {
     width: 440px;
     padding: 25px 0;
+
+    &:hover,
+    &:active {
+      padding: 27px 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__wrapper {
-    width: 100%;
+    width: 477px;
   }
 
   .form__title {
