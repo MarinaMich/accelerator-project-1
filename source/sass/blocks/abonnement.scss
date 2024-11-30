@@ -25,7 +25,7 @@
   text-align: center;
   position: relative;
   padding-top: 46px;
-  height: 120px;
+  min-height: 120px;
   min-width: 206px;
 }
 
@@ -57,8 +57,8 @@
 .abonnement__ruble {
   display: inline-block;
   background-image: url("/__spritemap#sprite-ruble-view");
-  width: 23px;
-  height: 33px;
+  width: 24px;
+  height: 34px;
 }
 
 .abonnement__button {
