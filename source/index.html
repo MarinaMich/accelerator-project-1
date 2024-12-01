@@ -750,16 +750,21 @@
         <div class="form-contact__free-class form">
           <div class="form__wrapper">
             <h2 class="form__title title">Бесплатное занятие</h2>
-            <form id="form-contact" action="https://echo.htmlacademy.ru/" method="post">
+            <form id="form-contact" action="https://echo.htmlacademy.ru/" method="post" novalidate>
               <div class="form__inputs">
-                <label>
-                  <input placeholder="Имя" type="text" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" title="Допускается ввод только букв и пробелов." required>
-                  <span class="visually-hidden">Введите свое имя.</span>
-                </label>
-                <label>
-                  <input placeholder="Телефон" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" i9uuuuuu8 required>
-                  <span class="visually-hidden">Введите свой телефон.</span>
-                </label>
+                <div class="form__input">
+                  <label>
+                    <input type="text" id="input__name" class="form__type-input" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" data-error-message="Допускается ввод только букв и пробелов." aria-describedby="name-error" required>
+                    <span class="visually-hidden">Введите свое имя.</span>
+                  </label>
+                  <span class="form__error input__name-error" id="name-error" aria-live="polite"></span>
+                </div>
+                <div class="form__input">
+                  <label>
+                    <input type="tel" id="input__phone" class="form__type-input" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" data-error-message="Используйте только числа." placeholder="Телефон" aria-describedby="phone-error" required>
+                  </label>
+                  <span class="form__error input__phone-error" id="phone-error" aria-live="polite"></span>
+                </div>
               </div>
               <button class="form__button" type="submit">Отправить</button>
             </form>

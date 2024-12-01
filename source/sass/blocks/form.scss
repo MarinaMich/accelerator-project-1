@@ -13,54 +13,56 @@
   flex-direction: column;
   row-gap: 36px;
   margin-bottom: 36px;
+}
 
-  input {
-    color: $white;
-    background-color: inherit;
-    border: none;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    width: 100%;
-    border-bottom: 1px solid $gray-button;
-    padding: 2px 0;
-  }
+.form__type-input {
+  color: $white;
+  background-color: inherit;
+  border: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid $gray-button;
+  padding: 2px 0;
 
-  input:not(:focus):invalid {
-    border-bottom: 1px solid $error;
-  }
-
-  input:not(:focus):valid {
-    border-bottom: 1px solid $gray-button;
-  }
-
-  input::placeholder {
+  &::placeholder {
     font-weight: 300;
     color: $white;
     opacity: 0.4;
   }
 
-  input:hover {
+  &:hover {
     border-color: $white;
   }
 
-  input:focus {
+  &:focus {
     outline: none;
     border: 1px solid $gray-button;
     padding: 1px 0;
   }
 
-  input:focus::placeholder {
+  &:focus::placeholder {
     color: transparent;
   }
 
-  input:disabled {
+  &:disabled {
     opacity: 0.4;
     border-color: rgba(255, 255, 255, 0.3);
     pointer-events: none;
   }
+
+  &--error {
+    border-bottom: 1px solid $error;
+  }
+}
+
+/* Для отображения span-элемента с ошибкой */
+.form__error--active {
+  display: block;
+  color: $error;
 }
 
 .form__button {
@@ -95,7 +97,8 @@
     padding: 26px 0;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
     pointer-events: none;
   }
@@ -143,12 +146,12 @@
     text-align: left;
   }
 
+  .form__input {
+    flex-grow: 1;
+  }
+
   .form__inputs {
     width: 477px;
-
-    label {
-      flex-grow: 1;
-    }
 
     input {
       width: 100%;
