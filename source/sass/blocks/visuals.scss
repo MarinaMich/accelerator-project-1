@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.visuals img{
+.visuals img {
   display: block;
 }
 
@@ -22,7 +22,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     background-color: rgba(20, 54, 122, 0.5);
     background-blend-mode: overlay;
     width: 100%;
@@ -62,8 +62,8 @@
     border-right: 0;
     top: 39%;
     left: 43%;
-
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -86,7 +86,7 @@
     }
 
     &::after {
-      border: 2px solid $main-text;;
+      border: 2px solid $main-text;
       opacity: 0.6;
     }
   }
@@ -168,7 +168,7 @@
 
 @media (min-width: $desktop-width) {
   .visuals__video {
-    top:285px;
+    top: 285px;
     left: -100px;
   }
 
@@ -185,5 +185,4 @@
       height: 100px;
     }
   }
-
 }

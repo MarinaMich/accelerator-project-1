@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $tablet-width) {
- .slides {
+  .slides {
     position: relative;
     width: 678px;
     padding-left: 20px;
@@ -63,7 +63,7 @@
     background-color: inherit;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: inline-block;
       width: 22px;

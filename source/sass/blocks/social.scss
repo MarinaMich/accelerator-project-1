@@ -1,13 +1,15 @@
 .social {
   @include list-reset;
+
   display: flex;
   gap: 20px;
   width: 115px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .social__link {
   @include link-edit;
+
   width: 25px;
   height: 25px;
   border-radius: 50%;

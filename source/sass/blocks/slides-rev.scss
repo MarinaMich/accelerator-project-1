@@ -7,7 +7,7 @@
 
 .slides-rev__container {
   background-color: $add-background-blocks;
-  box-shadow: 0px 0px 40px 0px #1c337433;
+  box-shadow: 0 0 40px 0 #1c337433;
 }
 
 .slides-rev__item {
@@ -26,7 +26,7 @@
   div {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 17px;
     align-items: center;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .slides-rev__button-prev,
-  .slides-rev__button-next  {
+  .slides-rev__button-next {
     display: block;
     width: 50px;
     height: 50px;
@@ -97,7 +97,7 @@
     background-color: inherit;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: inline-block;
       width: 22px;
