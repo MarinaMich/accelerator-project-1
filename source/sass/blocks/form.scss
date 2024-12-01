@@ -18,7 +18,7 @@
     color: $white;
     background-color: inherit;
     border: none;
-    font-family: "Roboto" Condensed;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -26,45 +26,45 @@
     width: 100%;
     border-bottom: 1px solid $gray-button;
     padding: 2px 0;
+  }
 
-    input:invalid {
-      border-bottom: 1px solid $error;
-    }
+  input:not(:focus):invalid {
+    border-bottom: 1px solid $error;
+  }
 
-    input:valid {
-      border-bottom: 1px solid $gray-button;
-    }
+  input:not(:focus):valid {
+    border-bottom: 1px solid $gray-button;
+  }
 
-    &::placeholder {
-      font-weight: 300;
-      color: $white;
-      opacity: 0.4;
-    }
+  input::placeholder {
+    font-weight: 300;
+    color: $white;
+    opacity: 0.4;
+  }
 
-    &:hover {
-      border-color: $white;
-    }
+  input:hover {
+    border-color: $white;
+  }
 
-    &:focus {
-      outline: none;
-      border: 1px solid $gray-button;
-      padding: 1px 0;
+  input:focus {
+    outline: none;
+    border: 1px solid $gray-button;
+    padding: 1px 0;
+  }
 
-      &::placeholder {
-        color: transparent;
-      }
-    }
+  input:focus::placeholder {
+    color: transparent;
+  }
 
-    &:disabled {
-      opacity: 0.4;
-      border-color: rgba(255, 255, 255, 0.3);
-      pointer-events: none;
-    }
+  input:disabled {
+    opacity: 0.4;
+    border-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
   }
 }
 
 .form__button {
-  font-family: "Roboto" Condensed;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;

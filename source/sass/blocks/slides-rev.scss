@@ -7,7 +7,7 @@
 
 .slides-rev__container {
   background-color: $add-background-blocks;
-  box-shadow: 0 0 40px 0 #1c337433;
+  box-shadow: 0 0 40px 0 rgb($add-background-blocks, 0.2);
 }
 
 .slides-rev__item {
